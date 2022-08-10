@@ -10,4 +10,4 @@ datagroup: pon_cdp_default_datagroup {
 
 persist_with: pon_cdp_default_datagroup
 
-explore: table1 {}
+explore: table2 {}

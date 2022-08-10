@@ -1,4 +1,4 @@
-view: table1 {
+view: table2 {
   sql_table_name: `Dataset.table2`
     ;;
 
@@ -74,6 +74,16 @@ view: table1 {
 
   dimension: testdrive_model {
     type: string
+    sql: ${TABLE}.Testdrive_model ;;
+  }
+
+  dimension: Preference_channel {
+    type: string
+    sql: ${TABLE}.Testdrive_model ;;
+  }
+
+  dimension: Preference_dealer {
+    type: number
     sql: ${TABLE}.Testdrive_model ;;
   }
 
