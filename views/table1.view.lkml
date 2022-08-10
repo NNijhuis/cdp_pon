@@ -1,4 +1,4 @@
-view: table2 {
+view: table1 {
   sql_table_name: `Dataset.table2`
     ;;
 
