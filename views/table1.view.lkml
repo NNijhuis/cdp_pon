@@ -1,5 +1,5 @@
 view: table1 {
-  sql_table_name: `Dataset.table1`
+  sql_table_name: `Dataset.table2`
     ;;
 
   dimension: brochure {
