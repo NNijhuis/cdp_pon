@@ -88,12 +88,12 @@ view: table1 {
     sql: ${TABLE}.Likelihood_to_Testdrive ;;
   }
 
-  dimension: Preference_channel {
+  dimension: preference_channel {
     type: string
     sql: ${TABLE}.Preference_channel ;;
   }
 
-  dimension: Preference_dealer {
+  dimension: preference_dealer {
     type: number
     sql: ${TABLE}.Preference_dealer ;;
   }
