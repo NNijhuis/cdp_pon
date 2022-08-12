@@ -7,14 +7,10 @@ view: table1 {
     sql: ${TABLE}.Brochure ;;
   }
 
-  dimension: contacted_dealer {
-    type: number
-    sql: ${TABLE}.Contacted_Dealer ;;
-  }
 
-  dimension: current_vw_car_tenure {
+  dimension: current_car_tenure {
     type: number
-    sql: ${TABLE}.Current_VW_car_tenure ;;
+    sql: ${TABLE}.Current_car_tenure ;;
   }
 
   dimension: currently_drives {
@@ -42,49 +38,64 @@ view: table1 {
     sql: ${TABLE}.Engagement_score ;;
   }
 
-  dimension: predicted_clv {
+  dimension: predicted_cupra_type {
+    type: string
+    sql: ${TABLE}.Predicted_Cupra_Type ;;
+  }
+
+  dimension: predicted_cupra_line {
+    type: string
+    sql: ${TABLE}.Predicted_Cupra_Line ;;
+  }
+
+  dimension: predicted_usp_1 {
+    type: string
+    sql: ${TABLE}.Predicted_USP_1 ;;
+  }
+
+  dimension: predicted_usp_2 {
+    type: string
+    sql: ${TABLE}.Predicted_USP_2 ;;
+  }
+
+  dimension: testdriven {
     type: number
-    sql: ${TABLE}.Predicted_CLV ;;
+    sql: ${TABLE}.Testdriven ;;
   }
 
-  dimension: predicted_model_of_interest {
-    type: string
-    sql: ${TABLE}.Predicted_model_of_interest ;;
+  dimension: phone_number_available {
+    type: yesno
+    sql: ${TABLE}.Phone_number_available ;;
   }
 
-  dimension: predicted_usp_vw_1 {
-    type: string
-    sql: ${TABLE}.Predicted_USP_VW_1 ;;
+  dimension: email_available {
+    type: yesno
+    sql: ${TABLE}.Email_available ;;
   }
 
-  dimension: predicted_usp_vw_2 {
-    type: string
-    sql: ${TABLE}.Predicted_USP_VW_2 ;;
+  dimension: visited_cupra_website {
+    type: yesno
+    sql: ${TABLE}.Visited_cupra_website ;;
   }
 
-  dimension: switch_after_drive {
+  dimension: configured_cupra {
+    type: yesno
+    sql: ${TABLE}.Configured_Cupra ;;
+  }
+
+  dimension: likelihood_to_testdrive {
     type: number
-    sql: ${TABLE}.Switch_after_drive ;;
-  }
-
-  dimension: testdrive {
-    type: number
-    sql: ${TABLE}.Testdrive ;;
-  }
-
-  dimension: testdrive_model {
-    type: string
-    sql: ${TABLE}.Testdrive_model ;;
+    sql: ${TABLE}.Likelihood_to_Testdrive ;;
   }
 
   dimension: Preference_channel {
     type: string
-    sql: ${TABLE}.Testdrive_model ;;
+    sql: ${TABLE}.Preference_channel ;;
   }
 
   dimension: Preference_dealer {
     type: number
-    sql: ${TABLE}.Testdrive_model ;;
+    sql: ${TABLE}.Preference_dealer ;;
   }
 
   measure: count {
